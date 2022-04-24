@@ -1,0 +1,11 @@
+services:
+  mars-robots:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: mars-robots
+    image: mars-robots:1.0.0
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./src:/app/src
