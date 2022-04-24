@@ -5,14 +5,23 @@ Martian Robots Problem resolution
 
 2- npm run start
 
+---------------------------------
+Or docker-compose up
+
+---------------------------------
+
 Create planet where coordinates indicate the top right X & Y coordinates from the map
+
 POST /planets
+
 {
     coordinates: "5 3"
 }
 
 Create robots, send them  to given planet and executes their instructions
+
 POST /robots
+
 {
     marsid: "678ceb37-8524-4a7a-89db-3a546d813bd4"
     robotsets: [
@@ -26,8 +35,10 @@ POST /robots
 }
 
 Get a list of existing planets
+
 GET /planets
 
 Get the robot's execution from the given planet
+
 GET /robots/:planetId
 
